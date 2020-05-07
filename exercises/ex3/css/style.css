@@ -1,0 +1,50 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+header, main, footer, nav, aside, section, div  {
+    display: block;
+}
+
+
+body{
+    background: #999999 url(../images/background.png) repeat-x ;
+    background-color: lightgrey ;
+    width:1200px;
+    height:1000px;
+    
+}
+
+#wrapper{
+    background-color: white;
+    width: 998px;
+    height: 933px;
+    margin: 0 auto;
+   
+}
+main{
+    width: 814px;
+    height: 833px;
+    background-color: white;
+    
+}
+
+
+header{
+    background-color: rgb(27, 26, 26);
+    width: 1000px;
+    height:100px;
+    
+    
+}
+
+footer{
+    background-color: rgb(27, 26, 26);
+    width: 1200px;
+    height:66px;
+
+    position: relative;
+}
+
+
