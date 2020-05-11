@@ -2,6 +2,7 @@
 <html >
 <head>
     
+    <meta name = "viewport" content = "width=device-width, intial-scale=1">
     <title>Itamar Yarden Ex3 - layout2</title>
     <link href = "css/style.css" rel = "stylesheet">
 </head>
@@ -13,7 +14,8 @@
             <a id = "logo" alt = "logo" title = "logo"></a>
         </header>
 
-        <nav class = "layout3Nav">  
+        <nav class = "layout3Nav">
+            <a href = "#" id = "hamburger" ></a>
             <ul>
                 <li>
                     <a href="index.html" alt = "index" title = "index">Index</a>
@@ -25,19 +27,17 @@
                     <a href="layout3.html" alt = "layout3" title = "layout3"><b>layout3</b></a>
                 </li>
             </ul>
-            <button>On</button>
-            <button>Off</button>
+            <button onclick = "on()">On</button>
+            <button onclick = "off()">Off</button>
             
         </nav>
 
-        <main >
-            <div class = "container">
-
-            </div>
-        </main>
+        <main class = "container"></main>
+    
 
     </div>
     <footer class = "layout2Footer"></footer>
+    <script src = "JS/script.js" rel = "stylesheet"></script>
 </body>
 
 

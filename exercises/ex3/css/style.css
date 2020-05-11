@@ -9,7 +9,7 @@ header, section, nav, aside, footer, main{
 
 body{
     background:  url(../images/background.png) repeat-x;
-    background-color: rgb(224, 217, 217);
+    background-color: rgb(215, 215, 215);
 }
 
 header{
@@ -26,8 +26,6 @@ header{
     position: relative;
     top: 20px;
     left: 470px;
-
-
 }
 
 #wrapper{
@@ -37,6 +35,25 @@ header{
     margin: 0px auto;
 }
 
+ul{
+    list-style-type: none;
+    position: absolute;
+    top: 3px;
+    left: 10px;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 60px;
+    background: rgb(69, 70, 71);
+
+}
+
+
+
+/* ----------------INDEX IMPLEMENTATION---------------- */
 
 .indexMain{
       width: 700px;
@@ -98,25 +115,14 @@ header{
     
 }
 
-
-ul{
-    list-style-type: none;
-    position: absolute;
-    top: 3px;
-    left: 10px;
+.indexNav li:nth-child(1){
+    font-weight: bold;
 }
 
 
 
-footer{
-    width: 100%;
-    height: 60px;
-    background: rgb(69, 70, 71);
 
-}
-
-
-/* LAYOUT2 IMPLEMENTATION */
+/* ----------------LAYOUT2 IMPLEMENTATION---------------- */
 
 .layout2Nav{
     width:1000px;
@@ -129,13 +135,16 @@ footer{
 .layout2Nav ul{
     position: absolute;
     left: 160px;
-    top: 40px;
-    bottom: 20px;   
+    top: 75px;   
 }
 
 .layout2Nav li{
     display: inline;
     margin-right: 10px;
+}
+
+.layout2Nav li:nth-child(2){
+    font-weight: bold;
 }
 
 .layout2Nav a{
@@ -205,14 +214,14 @@ aside{
 }
 
 
-/* LAYOUT3 IMPLEMENTATION */
+/* ----------------LAYOUT3 IMPLEMENTATION---------------- */
 
 .layout3Nav{
     width:1000px;
     height: 185px;
-    background: url(../images/bgNav2.png) ;
+    background: url(../images/bgNav2.png);
+    background-size: 100% 100%;
     position: relative;
-
 }
 
 .layout3Nav ul{
@@ -234,13 +243,17 @@ aside{
     text-decoration: none;
 }
 
+.layout3Nav li:nth-child(3){
+    font-weight: bold;
+}
+
 button{
     width: 50px;
     height: 20px;
     float: left;
     margin-left: 5px;
     margin-top: 5px;
-    background-color: rgb(93, 55, 119);
+    background-color: rgb(145, 109, 168);
     font-weight: bolder;
     border: 1.2px solid black;
     
@@ -250,16 +263,65 @@ button{
     width: 1000px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-between;
+    justify-content: space-between;
     background: white;
+    margin-bottom: 50px;
 }
 
-/* #tmpbox{
-    width: 202px;
-    height: 313px;
+.container article{
+    display: inline-block;
+    height: 310px;
+    width: 205px;
     border: 1px solid black;
-    background-color: pink;
+    margin: 50px;
+}
+
+
+@media  (max-width: 577px){
+
+    body{
+        background: none;
+    }
+
+    #wrapper{
+        width: 577px;
+        margin: 0 auto;
+    }
+ 
+    header{
+        width: 577px;
+    }
+
+    #logo{
+        left: 257.5px;
+    }
     
-} */
+    nav.layout3Nav{
+        width:577px;
+    }
+
+    .container{
+        width: 577px;
+        left: 257.5px;
+    }
+    
+    .container article{
+        margin: 35px;
+    }
+
+    #hamburger{
+        background-image: url(../images/Hamburger.png);
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: block;
+        width: 16px;
+        height: 16px;
+    }
+    
+    .layout3Nav ul{
+        left:190.5px;
+    }
+}
+
 
