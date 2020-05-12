@@ -21,7 +21,7 @@ var first = cont.firstElementChild;
 
 
 first.onmouseover = function(){
-    first.style.backgroundImage = "url(../images/I.png)";
+    first.style.backgroundImage = "url(ex3/images/Itamar.png)";
 }
 
 first.onmouseout = function(){
