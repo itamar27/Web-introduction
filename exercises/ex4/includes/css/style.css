@@ -1,0 +1,21 @@
+label {
+    display: block;
+}
+.error {
+    color: darkred;
+}
+.highlight {
+    background-color: aquamarine;
+}
+
+#sub{
+    padding: 0px !important;
+}
+
+.jumbotron{
+    margin: 1px !important;
+}
+
+.container{
+    padding: 10px !important;
+}

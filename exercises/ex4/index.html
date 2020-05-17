@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Itamar's form!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- Bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="includes/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="jumbotron d-flex justify-content-center bg-dark">
+            <a class="navbar-brand  " href="index.html" style="color:#D45812; font-size: 50px;">Itamar Yarden</a>
+        </div>
+
+        <main>
+            <div class="container bg-light">
+                <form action="http://html5-book.co.il/teach/forms/get_form2.php" method="GET" id="Itamarform">
+
+                    <!--  FullName -->
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label>FullName &nbsp; </label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <input name="fullName" required type="text" pattern="^[A-Z][a-z]+\s+[a-zA-Z\s]+">
+                        </div>
+                    </div>
+                    <br>
+
+                    <!--  Password -->
+                    <div class="row ">
+                        <div class="col-6 text-center">
+                            <label>Password &nbsp; </label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <input name="pass" type="password" pattern="[a-zA-Z0-9]{8,12}">
+                        </div>
+                    </div>
+                    <br>
+
+                    <!--  Email -->
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label>Email &nbsp; </label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <input autocomplete name="mail" type="email" pattern="[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </div>
+                    </div>
+                    <br>
+
+
+
+                    <!--  WebSite -->
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label>Website &nbsp; </label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <input name="website" type="url">
+                        </div>
+                    </div>
+                    <br>
+
+                    <!--  Phone -->
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label>Phone &nbsp; </label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <input name="phone" type="tel" pattern="[0-9]{9,10}">
+                        </div>
+                    </div>
+                    <br>
+
+                    <!--  Coffee -->
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label>Coffee &nbsp; </label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <input name="coffee" type="number">
+                        </div>
+                    </div>
+                    <br>
+
+                    <!--  Range -->
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label>Range &nbsp; </label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <input min="0" max="100" name="temper" type="range">
+                        </div>
+                    </div>
+                    <br>
+
+                    <!--  Address -->
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label>
+                                Address &nbsp;
+                            </label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <textarea cols="25" name="address" rows="1">Fill...</textarea>
+                        </div>
+                    </div>
+                    <br>
+
+                    <!--  Hobbies -->
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label>
+                                Hobbies &nbsp;
+                            </label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <fieldset>
+                                <label>GYM:
+                                    <input name="interests[]" type="checkbox" value="GYM">
+                                </label>
+                                <label>Play RedAlert:
+                                    <input name="interests[]" type="checkbox" value="Play RedAlert">
+                                </label>
+                                <label>Coding-tutorials:
+                                    <input name="interests[]" type="checkbox" value="Coding-tutorials">
+                                </label>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <br>
+
+                    <!-- Gender -->
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label>
+                                Gender &nbsp;
+                            </label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <input checked name="gender" type="radio" value="male"> Male
+                            <br>
+                            <input name="gender" type="radio" value="female"> Female
+                            <br>
+                            <input name="gender" type="radio" value="other"> Other
+                        </div>
+                    </div>
+                    <br>
+
+                    <!--Age -->
+                    <div class="row ">
+                        <div class="col-6 text-center">
+                            <label>
+                                Age &nbsp;
+                            </label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <select name="age" required>
+                                <option value="" selected="selected">Choose...</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-6 text-right" id="sub">
+                            <input type="submit" value="Submit"
+                                class="btn btn-default btn-bloc btn-outline-dark">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="includes/js/main.js"></script>
+</body>
+
+</html>
