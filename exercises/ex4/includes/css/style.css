@@ -25,6 +25,7 @@ label {
     background: none;
 }
 
+
 .container{
     position: relative;
     z-index: 6;
@@ -52,9 +53,10 @@ main{
     height: 100vh;
 }
 form{
-    font-family: 'Nanum Gothic Coding', monospace;
-    color: rgb(175, 82, 29);
+  font-family: 'Nanum Gothic Coding', monospace;
+  color: rgb(136, 50, 0);
     font-weight: bold;
+    font-size:20px;
 
 }
 
