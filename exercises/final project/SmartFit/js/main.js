@@ -7,7 +7,7 @@ $('#workoutBtn').click(function () {
 
 
 
-//----------------------------workout cards trainee----------------------
+//----------------------------workout card list trainee----------------------
 
 (function initializeCards() {
   var cards = "";
@@ -17,3 +17,14 @@ $('#workoutBtn').click(function () {
   var main = document.getElementsByClassName("workoutcards")[0];
   main.innerHTML = cards;
 }())
+
+
+//----------------------------workout details trainee----------------------
+(function(){
+  var txt1 = '<h6 class="col-4 text-center">Name: Circuite full body</h6>';
+  var txt2 = '<h6 class="col-4 text-center">Difficulty: 6</h6>';
+  var txt3 = '<h6 class="col-4 text-center">....</6>';
+  
+  $("#headerRow").append(txt1,txt2,txt3);
+}())
+
