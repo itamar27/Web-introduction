@@ -19,16 +19,16 @@
 <body>
 
   <div class="bg-image">
-    <div class="container ">
+    <div class="container">
 
-      <div class="jumbotron center-block d-flex justify-content-center" style="margin-bottom:0">
-        <a href="#" class="link"></a>
+      <div class="jumbotron center-block d-flex justify-content-center">
+        <a href="index.html" class="link"></a>
       </div>
 
 
 
       <nav class="navbar navbar-expand-sm navbar-expand-m  rounded ">
-        <a class="navbar-brand" href="#" id="icon"><b>Messages:</b> bathroom needs cleaning...</a>
+        <a class="navbar-brand" href="#" id="iconTrainer"><b>Messages:</b> bathroom need cleaning...</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
           aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -37,56 +37,199 @@
       </nav>
 
 
-      <div class="container">
+      <div class="container" id="formCon">
         <form>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label>Workout Name:</label>
-              <input type="text" class="form-control" placeholder="Weight lifting...">
+              <input type="text" class="form-control" placeholder="Workout name...">
             </div>
             <div class="form-group col-md-6">
-              <label for="inputPassword4">Password</label>
-              <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+              <textarea class="form-control" rows="1" placeholder="Workout general description..."></textarea>
             </div>
           </div>
-          <div class="form-group">
-            <label>Description</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-              placeholder="blalalaalala"></textarea>
-            <div class="form-group">
-              <label for="inputAddress2">Trainer name</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Boris Vlad">
-            </div>
+
+          <div class="row">
+            <label for="customRange">Scale the workout</label>
+            <input type="range" name="#" class="custom-range" id="customRange"  min="0" max="10">
+            <output class="bubble"></output>
+          </div>
+
+          <div class="container">
+            <h6 class="col-md-12">
+              Exercises
+            </h6>
             <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputCity">City</label>
-                <input type="text" class="form-control" id="inputCity">
+
+              <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Exercise name...">
               </div>
-              <div class="form-group col-md-4">
-                <label for="inputState">Participants</label>
+
+              <div class="form-group col-md-2">
                 <select id="inputState" class="form-control">
-                  <option selected>Choose...</option>
-                  <option value="10">10-20 participants</option>
-                  <option value="20">20-40 participants</option>
-                  <option value="30+">30-50 participants</option>
-                  <option value="80">80 participants</option>
+                  <option selected>Number of sets...</option>
+                  <option value="2">1</option>
+                  <option value="3">2</option>
+                  <option value="4">3</option>
+                  <option value="5">4</option>
                 </select>
               </div>
+
               <div class="form-group col-md-2">
-                <label for="inputZip">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
+                <select id="inputState" class="form-control" placeholder="Repeats">
+                  <option selected>Repeats...</option>
+                  <option value="6">6-8</option>
+                  <option value="8">8-10</option>
+                  <option value="10">10-12</option>
+                  <option value="12">12-14</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <textarea class="form-control" rows="1" placeholder="Description..."></textarea>
+              </div>
+
+              <div class="col-md 1">
+                <button class="btn">+</button>
               </div>
             </div>
-            <div class="form-group">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Send email as a distribution list
-                </label>
+            <div class="form-row">
+
+              <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Exercise name...">
+              </div>
+
+              <div class="form-group col-md-2">
+                <select id="inputState" class="form-control">
+                  <option selected>Number of sets...</option>
+                  <option value="2">1</option>
+                  <option value="3">2</option>
+                  <option value="4">3</option>
+                  <option value="5">4</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-2">
+                <select id="inputState" class="form-control" placeholder="Repeats">
+                  <option selected>Repeats...</option>
+                  <option value="6">6-8</option>
+                  <option value="8">8-10</option>
+                  <option value="10">10-12</option>
+                  <option value="12">12-14</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <textarea class="form-control" rows="1" placeholder="Description..."></textarea>
+              </div>
+
+              <div class="col-md 1">
+                <button class="btn">+</button>
               </div>
             </div>
+            <div class="form-row">
+              <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Exercise name...">
+              </div>
+
+              <div class="form-group col-md-2">
+                <select id="inputState" class="form-control">
+                  <option selected>Number of sets...</option>
+                  <option value="2">1</option>
+                  <option value="3">2</option>
+                  <option value="4">3</option>
+                  <option value="5">4</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-2">
+                <select id="inputState" class="form-control" placeholder="Repeats">
+                  <option selected>Repeats...</option>
+                  <option value="6">6-8</option>
+                  <option value="8">8-10</option>
+                  <option value="10">10-12</option>
+                  <option value="12">12-14</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <textarea class="form-control" rows="1" placeholder="Description..."></textarea>
+              </div>
+
+              <div class="col-md 1">
+                <button class="btn">+</button>
+              </div>
+            </div>
+            <div class="form-row">
+
+              <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Exercise name...">
+              </div>
+
+              <div class="form-group col-md-2">
+                <select id="inputState" class="form-control">
+                  <option selected>Number of sets...</option>
+                  <option value="2">1</option>
+                  <option value="3">2</option>
+                  <option value="4">3</option>
+                  <option value="5">4</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-2">
+                <select id="inputState" class="form-control" placeholder="Repeats">
+                  <option selected>Repeats...</option>
+                  <option value="6">6-8</option>
+                  <option value="8">8-10</option>
+                  <option value="10">10-12</option>
+                  <option value="12">12-14</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <textarea class="form-control" rows="1" placeholder="Description..."></textarea>
+              </div>
+
+              <div class="col-md 1">
+                <button class="btn">+</button>
+              </div>
+            </div>
+            <div class="form-row">
+
+              <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Exercise name...">
+              </div>
+
+              <div class="form-group col-md-2">
+                <select id="inputState" class="form-control">
+                  <option selected>Number of sets...</option>
+                  <option value="2">1</option>
+                  <option value="3">2</option>
+                  <option value="4">3</option>
+                  <option value="5">4</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-2">
+                <select id="inputState" class="form-control" placeholder="Repeats">
+                  <option selected>Repeats...</option>
+                  <option value="6">6-8</option>
+                  <option value="8">8-10</option>
+                  <option value="10">10-12</option>
+                  <option value="12">12-14</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <textarea class="form-control" rows="1" placeholder="Description..."></textarea>
+              </div>
+
+              <div class="col-md 1">
+                <button class="btn">+</button>
+              </div>
+            </div>
+            <div class="form-row">
+
+          </div>
+
+          <div class="row d-flex justify-content-center">
             <button type="submit" class="btn">Submit</button>
           </div>
+
         </form>
 
 
@@ -110,73 +253,3 @@
 </html>
 
 
-<!-- putaside
-div class="container">
-
-        <div class="jumbotron center-block d-flex justify-content-center" style="margin-bottom:0">
-          <a href="#" class="link"></a>
-        </div>
-      </div>
-    </div>
-
-    <nav class="navbar navbar-expand-sm navbar-expand-m  rounded ">
-      <a class="navbar-brand" href="#" id="icon"><b>Messages:</b> bathroom needs cleaning...</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar"></div>
-    </nav>
-
-    <form>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label>Workout Name:</label>
-          <input type="text" class="form-control" placeholder="Yoga #112D">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="inputPassword4">Password</label>
-          <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-        </div>
-      </div>
-      <div class="form-group">
-        <label>Description</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="blalalaalala"></textarea>
-        <div class="form-group">
-          <label for="inputAddress2">Trainer name</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Boris Vlad">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="form-group col-md-4">
-            <label for="inputState">Participants</label>
-            <select id="inputState" class="form-control">
-              <option selected>Choose...</option>
-              <option value="10">10-20 participants</option>
-              <option value="20">20-40 participants</option>
-              <option value="30+">30-50 participants</option>
-              <option value="80">80 participants</option>
-            </select>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Add</button>
-    </form>
-
-    <footer class="navbar fixed-bottom">SmartFit &copy;</footer>
-  </div>
-  </div> -->

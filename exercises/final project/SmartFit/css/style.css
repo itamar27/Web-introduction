@@ -3,7 +3,9 @@
     margin:0 ;
 }
 
-
+html{
+    height:100%;
+}
 .jumbotron{
     background-color: #04323F   !important;
     
@@ -28,23 +30,6 @@ body{
     background-color: rgb(10, 81, 100) !important;
 }
 
-
-
-#icon{
-    background: url(/images/icon.png) no-repeat ;
-    display: block;
-    height:60px;
-    color: black !important;
-    font-size: 15px;
-    padding-top:20px;
-    padding-left:65px;
-}
-
-
-.container{
-    overflow-y: auto;
-}
-
 footer{
     background-color: #04323F; 
     color: #D45812;
@@ -52,14 +37,12 @@ footer{
 
 .jumbotron{
     background-color: #04323F   !important;
+    margin-bottom:0;
     
 }
 
 .jumbotron a{
     display: block;
-    /* color: #D45812;
-    font-size: 50px;
-    font-weight: bold; */
     background: url("../images/logo.png") no-repeat;
     width: 201.2px;
     height: 85px;
@@ -71,9 +54,7 @@ footer{
     background: none !important;
 }
 
-#workoutList{
-    padding-top:10px;
-}
+
 
 .workoutBtn{
     margin-top:10px ;
@@ -86,8 +67,59 @@ button{
     font-size: 15px;
     background-color: #04323F !important;
 }
+/*-------------------Icon----------------------------------*/
+#iconTrainer{
+    background: url(/images/iconTrainer.png) no-repeat ;
+    display: block;
+    height:60px;
+    color: black !important;
+    font-size: 15px;
+    padding-top:20px;
+    padding-left:65px;
+}
+
+#iconTrainee{
+    background: url(/images/iconTrainee.png) no-repeat ;
+    display: block;
+    height:60px;
+    width:60px;
+}
+
+/*---------------------------Header----------------------*/
+.row{
+    flex-grow: 1;
+}
 
 
+#headerTrainee{
+    padding-top:10px;
+    color: #D45812;
+    font-family: 'Permanent Marker', cursive;
+    font-family:  'Headland One', serif;;
+    
+}
+
+
+
+
+/*--------------------form---------------------------------*/
+form label{
+    font-weight: bold;
+
+}
+
+#formCon{
+    padding-top:10px;
+}
+
+
+
+
+/*---------------------smartFit motivation-----------------*/
+#smartfitHeader{
+    font-family: 'Orbitron',sans-serif;
+     font-size:55px;
+}
 
 
 /*--------------------------Map--------------------------*/
@@ -98,4 +130,14 @@ button{
     width: 230px;
     height: 280px;
     text-decoration: none;
+}
+
+
+/*--------------------Workouts cards------*/
+.workoutcards{
+    justify-content: space-evenly;
+}
+.workoutList{
+    padding-top:10px;
+    margin-top:10px;
 }
