@@ -1,0 +1,101 @@
+*{
+    padding:0 ;
+    margin:0 ;
+}
+
+
+.jumbotron{
+    background-color: #04323F   !important;
+    
+}
+body{
+  background: url("../images/OE7GBE0.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
+.jumbotron a{
+    display: block;
+    background: url("../images/logo.png") no-repeat;
+    width: 201.2px;
+    height: 85px;
+
+}
+.navbar{
+    background-color: rgb(10, 81, 100) !important;
+}
+
+
+
+#icon{
+    background: url(/images/icon.png) no-repeat ;
+    display: block;
+    height:60px;
+    color: black !important;
+    font-size: 15px;
+    padding-top:20px;
+    padding-left:65px;
+}
+
+
+.container{
+    overflow-y: auto;
+}
+
+footer{
+    background-color: #04323F; 
+    color: #D45812;
+}
+
+.jumbotron{
+    background-color: #04323F   !important;
+    
+}
+
+.jumbotron a{
+    display: block;
+    /* color: #D45812;
+    font-size: 50px;
+    font-weight: bold; */
+    background: url("../images/logo.png") no-repeat;
+    width: 201.2px;
+    height: 85px;
+}
+
+.card{
+    border: 1px solid black; 
+    border-radius: 20px;
+    background: none !important;
+}
+
+#workoutList{
+    padding-top:10px;
+}
+
+.workoutBtn{
+    margin-top:10px ;
+    margin-left:10px ;   
+}
+
+button{
+    text-decoration: none;
+    color: #D45812 !important;
+    font-size: 15px;
+    background-color: #04323F !important;
+}
+
+
+
+
+/*--------------------------Map--------------------------*/
+
+#map{
+    background: url(/images/map.png);
+    display: block;
+    width: 230px;
+    height: 280px;
+    text-decoration: none;
+}
