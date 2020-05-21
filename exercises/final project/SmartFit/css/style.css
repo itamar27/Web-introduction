@@ -136,14 +136,7 @@ form label{
     font-weight: bold;
 } 
 
-@media (max-width:577px)
-{
-    #duplicator{
-        margin-top:5px;
-        margin-bottom:5px;
-    
-    }
-}
+
 
 
 /*---------------------smartFit motivation-----------------*/
@@ -189,12 +182,7 @@ form label{
 }
 
 
-.allBox h4{
-    color: #D45812;
-
-}
-
-.allBox h3{
+.allBox h4, h3, h2{
     color: #D45812;
 
 }
@@ -226,4 +214,22 @@ form label{
 
 
 
+@media (max-width:577px)
+{
+    #duplicator{
+        margin-top:5px;
+        margin-bottom:5px;
+    
+    }
 
+    #map{
+        margin-top: 20px;
+    }
+
+    .cardWO{
+        margin:10px;
+        width: 80%;
+    }
+
+
+}

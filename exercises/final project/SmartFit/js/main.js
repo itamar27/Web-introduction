@@ -23,43 +23,50 @@ function initializeCards() {
 }
 
 //----------------------------workout details trainee----------------------
-(function traineeWorkOutCards() {
-  var txt2 = '<p class="col-md-6 text-center">All time crusher fullbody for serious trainees with base knowladge in swinging KB, and Bar</p>';
-  var txt3 = '<p class="col-md-6 text-center"> 6</p>';
+var x = $("#woDetails").length;
+console.log(x);
+if (x == 1) {
+  (function traineeWorkOutCards() {
+    var txt2 = '<p >All time crusher fullbody for serious trainees with base knowladge in swinging KB, and Bar</p>';
+    var txt3 = '<p> 6</p>';
 
-  $(".headerRow").append(txt2, txt3);
+    $("#General").append(txt2);
+    $("#Difficulty").append(txt3);
+
+    // $(".headerRow").append(txt2, txt3);
 
 
+    var card1 = '<div class="cardWO allBox text-center"></div>'
+    for (var i = 0; i < 6; i++)
+      $(".cardEx").append(card1);
 
-  var card1 = '<div class="cardWO allBox text-center"></div>'
-  for (var i = 0; i < 6; i++)
-    $(".cardEx").append(card1);
+    var ex = 'Ex';
+    var device = ['Bench press', 'Dumbell', 'KB swing', 'Squat-Bar', 'Deadlift', 'Pull-Ups'];
+    var sets = ['3', '2', '4', '3', '2', '4'];
+    var reps = ['10-12', '6-8', '12-14', '6-8', '6-8', '12-14'];
+    var descrepition = ['hard hard', 'hard hard', 'hard hard', 'hard hard', 'hard hard', 'hard hard'];
 
+    var cardEx = document.getElementsByClassName("cardWO");
 
-  var ex = 'Ex';
-  var device = ['Bench press', 'Dumbell', 'KB swing', 'Squat-Bar', 'Deadlift', 'Pull-Ups'];
-  var sets = ['3', '2', '4', '3', '2', '4'];
-  var reps = ['10-12', '6-8', '12-14', '6-8', '6-8', '12-14'];
-  var descrepition = ['hard hard', 'hard hard', 'hard hard', 'hard hard' ,'hard hard', 'hard hard'];
+    for (var i = 0; i < 6; i++) {
+      cardEx[i].innerHTML = '<h3>Ex' + (i + 1) + "</h3>";
+      cardEx[i].innerHTML += "<p>" + device[i] + "</p>";
+      cardEx[i].innerHTML += "<p>" + sets[i] + "</p>";
+      cardEx[i].innerHTML += "<p>" + reps[i] + "</p>";
+      cardEx[i].innerHTML += "<p>" + descrepition[i] + "</p>";
 
-  var cardEx = document.getElementsByClassName("cardWO");
-  for (var i = 0; i < 6; i++) {
-    cardEx[i].innerHTML = '<h3>Ex' + (i + 1) + "</h3>";
-    cardEx[i].innerHTML += "<p>" + device[i] + "</p>";
-    cardEx[i].innerHTML += "<p>" + sets[i] + "</p>";
-    cardEx[i].innerHTML += "<p>" + reps[i] + "</p>";
-    cardEx[i].innerHTML += "<p>" + descrepition[i] + "</p>";
-    
-  }
+    }
 
-}())
+  }())
+}
 
 
 //---------------------------Workout form Trainer---------------//
 
 var numOfClicks = 0;
 var original = document.getElementById("duplicator");
-var clones = [original];
+if (original != null)
+  var clones = [original];
 
 $(".addNewEx").click(function () {
 
