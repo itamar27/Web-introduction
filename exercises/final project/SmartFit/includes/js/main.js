@@ -24,7 +24,6 @@ function initializeCards() {
 
 //----------------------------workout details trainee----------------------
 var x = $("#woDetails").length;
-console.log(x);
 if (x == 1) {
   (function traineeWorkOutCards() {
     var txt2 = '<p >All time crusher fullbody for serious trainees with base knowladge in swinging KB, and Bar</p>';
@@ -33,7 +32,6 @@ if (x == 1) {
     $("#General").append(txt2);
     $("#Difficulty").append(txt3);
 
-    // $(".headerRow").append(txt2, txt3);
 
 
     var card1 = '<div class="cardWO allBox text-center"></div>'
@@ -70,11 +68,12 @@ if (original != null)
 
 $(".addNewEx").click(function () {
 
+
   var clone = original.cloneNode(true);
+  clone.childNodes[9].childNodes[1].value ="";
   clone.id = "duplicator" + ++numOfClicks;
   var txt = '<h6>Ex' + (numOfClicks + 1) + '</h6>';
   clone.childNodes[1].innerHTML = txt;
-  clone.firstChild.innerHTML = txt;
   clones.push(clone);
   original.parentNode.appendChild(clone);
 });

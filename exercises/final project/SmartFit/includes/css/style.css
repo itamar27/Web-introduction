@@ -11,7 +11,7 @@ html{
     
 }
 body{
-  background: url("../images/OE7GBE0.jpg") no-repeat center center fixed;
+  background: url("../../images/bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -26,7 +26,7 @@ body{
 
 .jumbotron a{
     display: block;
-    background: url("../images/logo.png") no-repeat;
+    background: url("../../images/logo.png") no-repeat;
     width: 201.2px;
     height: 85px;
 
@@ -47,12 +47,6 @@ footer{
     
 }
 
-.jumbotron a{
-    display: block;
-    background: url("../images/logo.png") no-repeat;
-    width: 201.2px;
-    height: 85px;
-}
 
 .card{
     border: 1px solid black; 
@@ -75,7 +69,7 @@ button{
 }
 /*-------------------Icon----------------------------------*/
 #iconTrainer{
-    background: url(/images/iconTrainer.png) no-repeat ;
+    background: url("../../images/iconTrainer.png") no-repeat ;
     display: block;
     height:60px;
     color: black !important;
@@ -85,7 +79,7 @@ button{
 }
 
 #iconTrainee{
-    background: url(/images/iconTrainee.png) no-repeat ;
+    background: url("../../images/iconTrainee.png") no-repeat ;
     display: block;
     height:60px;
     width:60px;
@@ -149,7 +143,7 @@ form label{
 /*--------------------------Map--------------------------*/
 
 #map{
-    background: url(/images/map.png);
+    background: url("../../images/map.png");
     display: block;
     width: 230px;
     height: 280px;
