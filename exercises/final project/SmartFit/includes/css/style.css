@@ -121,14 +121,10 @@ form label{
     justify-content: space-between;
     justify-content: flex-end;
 }
-.addNewEx{
-    font-weight: bold;
+
+.addNewEx{   
     margin-right: 8px;
 }
-
-.removeEx{
-    font-weight: bold;
-} 
 
 
 
