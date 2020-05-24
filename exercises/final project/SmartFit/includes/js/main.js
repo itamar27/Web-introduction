@@ -74,7 +74,7 @@ if (x == 1) {
     var starclose = '</div>';
 
     var rate = document.getElementById("rating");
-    rate.innerHTML = '<h4>Rate this Workout</h4>' + starHead + star1 + star2 + star3 + star4 + star5 + starclose;
+    rate.innerHTML = '<h4 >Rate this Workout</h4>' + starHead + star5 + star4 + star3 + star2 + star1 + starclose;
   }())
 }
 

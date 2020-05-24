@@ -259,5 +259,11 @@ form label{
         width: 80%;
     }
 
+    .rate{
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+
 
 }
