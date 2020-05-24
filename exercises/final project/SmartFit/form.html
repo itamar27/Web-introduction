@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
 
-  <link rel="icon" href="../includes/images/SF_favicon.png">
+  <link rel="icon" href="images/SF_favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
   <title>SmartFit</title>
 
@@ -22,19 +22,16 @@
     <div class="container" id="mainContainer">
 
       <div class="jumbotron center-block d-flex justify-content-center">
-        <a href="index.html" class="link"></a>
+        <a href="index.html" ></a>
       </div>
-
-
 
       <nav class="navbar navbar-expand-sm navbar-expand-m  rounded ">
         <a class="navbar-brand" href="#" id="iconTrainer"><b>Messages:</b> bathroom need cleaning...</a>
         <div class="collapse navbar-collapse" id="collapsibleNavbar"></div>
       </nav>
 
-
       <div class="container" id="formCon">
-        <form>
+        <form action="#" method="GET" >
           <div class="form-row">
             <div class="form-group col-md-6">
               <input type="text" name="#" class="form-control" placeholder="Workout name...">
@@ -60,70 +57,67 @@
               <button type="button" class="btn removeEx" title="Remove new device">Delete last</button>
             </div>
           </div>
+
+          <div class="container">
+            <div class="form-row" id="duplicator">
+              <h6 class="col-md-1 block-center text-center">Ex1</h6>
+
+              <div class="col-md-3">
+                <select name="#" class="form-control">
+                  <option selected>Choose device..</option>
+                  <option value="Bench Press">Bench Press</option>
+                  <option value="Dumbell">Dumbell</option>
+                  <option value="Bar squat">Bar squat</option>
+                  <option value="Bar deadlift">Bar deadlift</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-2">
+                <select name="#" class="form-control">
+                  <option selected>Number of sets...</option>
+                  <option value="2">1</option>
+                  <option value="3">2</option>
+                  <option value="4">3</option>
+                  <option value="5">4</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-2">
+                <select name="#" class="form-control">
+                  <option selected>Repeats...</option>
+                  <option value="6">6-8</option>
+                  <option value="8">8-10</option>
+                  <option value="10">10-12</option>
+                  <option value="12">12-14</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-4">
+                <textarea class="form-control" rows="1" placeholder="Description..."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="row d-flex justify-content-center">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </form>
+
+        <footer class="navbar  navbar-expand-sm fixed-bottom">SmartFit &copy;</footer>
       </div>
 
-      <div class="container">
-        <div class="form-row" id="duplicator">
-          <h6 class="col-md-1 block-center text-center">
-            Ex1
-          </h6>
 
-          <div class="col-md-3">
-            <select id="inputState" name="#" class="form-control">
-              <option selected>Choose device..</option>
-              <option value="Bench Press">Bench Press</option>
-              <option value="Dumbell">Dumbell</option>
-              <option value="Bar squat">Bar squat</option>
-              <option value="Bar deadlift">Bar deadlift</option>
-            </select>
-          </div>
-
-          <div class="form-group col-md-2">
-            <select id="inputState" name="#" class="form-control">
-              <option selected>Number of sets...</option>
-              <option value="2">1</option>
-              <option value="3">2</option>
-              <option value="4">3</option>
-              <option value="5">4</option>
-            </select>
-          </div>
-
-          <div class="form-group col-md-2">
-            <select id="inputState" name="#" class="form-control" placeholder="Repeats">
-              <option selected>Repeats...</option>
-              <option value="6">6-8</option>
-              <option value="8">8-10</option>
-              <option value="10">10-12</option>
-              <option value="12">12-14</option>
-            </select>
-          </div>
-          <div class="form-group col-md-4">
-            <textarea class="form-control" rows="1" placeholder="Description..."></textarea>
-          </div>
-        </div>
-      </div>
-
-      <div class="row d-flex justify-content-center">
-        <button type="submit" class="btn">Submit</button>
-      </div>
-
-      </form>
-
-
-      <footer class="navbar  navbar-expand-sm fixed-bottom">SmartFit &copy;</footer>
+      <!-- Jquery and Js section link -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+      <script src="includes/js/main.js"></script>
     </div>
-
-
-    <!-- Jquery and Js section link -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"></script>
-    <script src="includes/js/main.js"></script>
-
+  </div>
 </body>
 
 </html>

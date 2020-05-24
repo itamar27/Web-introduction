@@ -1,5 +1,6 @@
+//-----------------Globals--------------------------//
 var NumOfWorkouts = 7
-
+//----------------- Index Functions----------------//
 $('#workoutBtn').click(function () {
   window.location = './form.html';
 });
@@ -12,7 +13,7 @@ if (main != null)
 function initializeCards() {
   var cards = [];
   var head = '<div class="card text-center workoutList allBox">';
-  var head1 = '<a href="workoutDetails.html" class="link" title="See full details"><h4 >Full body weight lifting</h4></a>';
+  var head1 = '<a href="workOutDetails.html"  title="See full details"><h4>Full body weight lifting</h4></a>';
   var head2 = '<h6>All time crusher</h6>';
   var head3 = '<p>Diffuclty level: 9</p>'
   var close = '</div>';
@@ -68,7 +69,6 @@ if (original != null)
 
 $(".addNewEx").click(function () {
 
-
   var clone = original.cloneNode(true);
   clone.childNodes[9].childNodes[1].value ="";
   clone.id = "duplicator" + ++numOfClicks;
@@ -76,7 +76,7 @@ $(".addNewEx").click(function () {
   clone.childNodes[1].innerHTML = txt;
   clones.push(clone);
   original.parentNode.appendChild(clone);
-});
+})
 
 $(".removeEx").click(function () {
   if (numOfClicks != 0) {

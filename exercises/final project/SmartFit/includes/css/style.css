@@ -6,16 +6,28 @@
 html{
     height:100%;
 }
-.jumbotron{
-    background-color: #04323F   !important;
-    
-}
+
 body{
-  background: url("../../images/bg.jpg") no-repeat center center fixed;
+  background: url("../../images/bg-min.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+a:hover h4{
+  font-weight: bolder;  
+}
+
+
+button{
+    color: #D45812 !important;
+    font-size: 15px;
+    background-color: #04323F !important;
+}
+
+button:hover{
+    font-weight: bolder;
 }
 
 
@@ -24,13 +36,18 @@ body{
 }
 
 
+.jumbotron{
+    background-color: #04323F   !important;
+    margin-bottom:0;   
+}
+
 .jumbotron a{
     display: block;
     background: url("../../images/logo.png") no-repeat;
     width: 201.2px;
     height: 85px;
-
 }
+
 .navbar{
     background-color: rgb(10, 81, 100) !important;
 }
@@ -41,13 +58,6 @@ footer{
     color: #D45812;
 }
 
-.jumbotron{
-    background-color: #04323F   !important;
-    margin-bottom:0;
-    
-}
-
-
 .card{
     border: 1px solid black; 
     border-radius: 20px;
@@ -55,18 +65,12 @@ footer{
 }
 
 
-
 .workoutBtn{
     margin-top:10px ;
     margin-left:10px ;   
 }
 
-button{
-    text-decoration: none;
-    color: #D45812 !important;
-    font-size: 15px;
-    background-color: #04323F !important;
-}
+
 /*-------------------Icon----------------------------------*/
 #iconTrainer{
     background: url("../../images/iconTrainer.png") no-repeat ;
@@ -85,21 +89,17 @@ button{
     width:60px;
 }
 
-/*---------------------------Header----------------------*/
+/*---------------------------Header Trainee----------------------*/
 .row{
     flex-grow: 1;
 }
-
 
 #headerTrainee{
     padding-top:10px;
     color: #D45812;
     font-family: 'Permanent Marker', cursive;
     font-family:  'Headland One', serif;;
-    
 }
-
-
 
 
 /*--------------------form---------------------------------*/
@@ -165,9 +165,6 @@ form label{
 }
 
 
-
-
-
 /*---------------- workout Details---------------*/
 .allBox{
     border: 1px solid black;
@@ -207,7 +204,7 @@ form label{
 }
 
 
-
+/*--------- Media query-------*/
 @media (max-width:577px)
 {
     #duplicator{
