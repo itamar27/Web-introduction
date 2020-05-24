@@ -89,7 +89,7 @@ footer{
     width:60px;
 }
 
-/*---------------------------Header Trainee----------------------*/
+/*---------------------------Trainee WorkoutDetail----------------------*/
 .row{
     flex-grow: 1;
 }
@@ -99,7 +99,15 @@ footer{
     color: #D45812;
     font-family: 'Permanent Marker', cursive;
     font-family:  'Headland One', serif;;
-}
+}  
+
+.checked {
+    color: #ffc700;
+  }
+
+  span{
+      margin-left:5px;
+  }
 
 
 /*--------------------form---------------------------------*/
@@ -171,12 +179,6 @@ form label{
 
 .allBox h4, h3, h2{
     color: #D45812;
-
-}
-
-.allBox.cardWO h3{
-    color: #D45812;
-
 }
 
 .headerRow{
@@ -185,8 +187,8 @@ form label{
 
 .headerRow h4{
     color: #D45812;
-
 }
+
 .cardEx{
     justify-content: space-around;
 }
@@ -199,16 +201,15 @@ form label{
     font-weight: bolder;
 }
 
+#rating h4{
+    padding: 8px 8px 0px 8px;
+}
+
 /*------------Star Rating-------*/
 .rate {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row-reverse;
     float: left;
     height: 46px;
     padding: 0 10px;
-    
 }
 .rate:not(:checked) > input {
     position:absolute;

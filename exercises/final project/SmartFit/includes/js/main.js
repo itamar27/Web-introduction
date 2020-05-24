@@ -16,15 +16,17 @@ function initializeCards() {
   var head1 = '<a href="workOutDetails.html"  title="See full details"><h4>Full body weight lifting</h4></a>';
   var head2 = '<h6>All time crusher</h6>';
   var head3 = '<p>Diffuclty level: 9</p>';
-  var starHead = '<div class="rate" >';
-  var star5 = ' <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>';
-  var star4 ='<input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>';
-  var star3 = ' <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>';
-  var star2 ='<input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>';
-  var star1 = '    <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>';
+  var raters = '<div><span>(554)</span>'
+  var check1 = '<span class="fa fa-star checked"></span>'
+  var check2 = '<span class="fa fa-star checked"></span>'
+  var check3 = '<span class="fa fa-star checked"></span>'
+  var check4 = '<span class="fa fa-star checked"></span>'
+  var check5 = '<span class="fa fa-star"></span>'
+  var score = '<span >4</span>'
   var close = '</div></div>';
+
   for (var i = 0; i < NumOfWorkouts; i++) {
-    cards += head + head1 + head2 + head3 + starHead + star5 +star4 +  star3 + star2 + star1 + close;
+    cards += head + head1 + head2 + head3 + raters + check1 + check2 + check3 + check4 + check5 + score + close;
   }
   return cards;
 }
@@ -62,6 +64,17 @@ if (x == 1) {
 
     }
 
+
+    var starHead = '<div class="rate">';
+    var star5 = ' <input type="radio" id="star5" name="rate" value="5" /><label for="star5">5 stars</label>';
+    var star4 = '<input type="radio" id="star4" name="rate" value="4" /><label for="star4">4 stars</label>';
+    var star3 = ' <input type="radio" id="star3" name="rate" value="3" /><label for="star3" >3 stars</label>';
+    var star2 = '<input type="radio" id="star2" name="rate" value="2" /><label for="star2" >2 stars</label>';
+    var star1 = '<input type="radio" id="star1" name="rate" value="1" /><label for="star1" >1 star</label>';
+    var starclose = '</div>';
+
+    var rate = document.getElementById("rating");
+    rate.innerHTML = '<h4>Rate this Workout</h4>' + starHead + star1 + star2 + star3 + star4 + star5 + starclose;
   }())
 }
 
@@ -76,7 +89,7 @@ if (original != null)
 $(".addNewEx").click(function () {
 
   var clone = original.cloneNode(true);
-  clone.childNodes[9].childNodes[1].value ="";
+  clone.childNodes[9].childNodes[1].value = "";
   clone.id = "duplicator" + ++numOfClicks;
   var txt = '<h6>Ex' + (numOfClicks + 1) + '</h6>';
   clone.childNodes[1].innerHTML = txt;
