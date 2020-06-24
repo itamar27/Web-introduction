@@ -1,0 +1,35 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href = "#">Projects</a></li>
+            </ul>
+        </nav>
+        <h1>Itamar Yarden Portolio</h1>
+        <img src = "{% static 'projects/mypic.jpg' %}">
+        {%  for project in projects %}
+        <section id={{project.id}}>
+            <img src={{project.image.url}} alt={{project.title}} title={{project.title}}>
+            <h2>{{project.title}}</h2>
+            <p>{{project.description}}</p>
+
+            {%if project.siteUrl%}
+            <a href={{project.siteUrl}} target="_blank">Click here to see the project</a>
+            {%  endif  %}
+        </section>
+        {%  endfor %}
+
+    </main>
+</body>
+
+</html>
