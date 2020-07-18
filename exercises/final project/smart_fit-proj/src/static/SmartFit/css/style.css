@@ -19,7 +19,10 @@ a:hover h4{
   font-weight: bolder;  
 }
 
-
+a:hover h6{
+    font-weight: bolder;  
+}
+  
 button{
     color: #D45812 !important;
     font-size: 15px;
@@ -94,12 +97,6 @@ footer{
     flex-grow: 1;
 }
 
-#headerTrainee{
-    padding-top:10px;
-    color: #D45812;
-    font-family: 'Permanent Marker', cursive;
-    font-family:  'Headland One', serif;
-}  
 
 .checked {
     color: #ffc700;
@@ -166,7 +163,6 @@ form label{
 .workoutList a{
     text-decoration: none;
     color: black;
-
 }
 
 
@@ -182,6 +178,10 @@ form label{
     color: #D45812;
 }
 
+#update{
+    color: #D45812;
+}
+
 .headerRow{
     margin-top:20px;
 }
@@ -191,12 +191,10 @@ form label{
 }
 
 .cardEx{
-    justify-content: space-around;
+    justify-content: space-between !important;
 }
 
 .cardWO{
-    width: 182px;
-    height:210px;
     margin:50px;
     padding-top: 10px;
     font-weight: bolder;
@@ -242,6 +240,11 @@ form label{
 .rate > label:hover ~ input:checked ~ label {
     color: #c59b08;
 }
+
+/* #starRating{
+    display: fixed;
+    bottom:0px;
+} */
 /*----------Login Form-------*/
 #login .container #login-row #login-column #login-box {
     margin-top: 120px;

@@ -19,9 +19,17 @@ from src import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('register/', views.registration, name='registration'),
-    path('workouts/new', views.workouts_new, name='worksouts.new'),
-    path('workouts/exercises', views.worksouts_excercises, name='worksouts.excercises'),
-    path('', views.home_page , name='home'),
-    # path('', views.home_page , name='login'),
+
+    path('register/', views.registration, name='auth.registration'),
+    path('login/', views.login_user, name='auth.login'),
+    path('logout/', views.logout_user, name='auth.logout'),
+
+    path('workouts/', views.workouts_index, name='workouts.index'),
+    path('workouts/new', views.workouts_create, name='worksouts.new'),
+    path('workouts/<int:workout_id>', views.workouts_read, name='workouts.read'),
+    path('workouts/update/<int:workout_id>', views.workouts_update, name='workouts.update'),
+
+    path('workouts/exercises', views.workouts_excercises, name='worksouts.excercises.index'),
+
+    path('', views.home_index , name='home.index'),
 ]

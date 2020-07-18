@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<main>
+    <div class="row justify-content-center align-items-center">
+        <div class="col-sm-4 ">
+            <h1 id="smartfitHeader">Go Hard <br><br>&nbsp;&nbsp;Go
+                Smart
+            </h1>
+        </div>
+
+        <div class="col-sm-4 d-flex justify-content-center flex-wrap">
+            {% for t in workouts %}
+            <div class="card text-center workoutList allBox w-100">
+                <a href="{% url 'workouts.read' workout_id=t.id %}" title="See full details">
+                    <h4>{{t.name}}</h4>
+                </a>
+                <h6>{{t.desc}}</h6>
+                <p>Diffuclty level:{{t.scale}}</p>
+                <a href="{% url 'workouts.update' workout_id=t.id %}" id="update" class="w-100" ><h6>update</h6></a>
+            </div>
+            {% endfor %}
+            <br>
+            {% if user.is_staff %}<button type="button" class="btn workoutBtn" id="newworkout">Add WorkOut</button>{% endif %}
+            <button type="button" class="btn workoutBtn" id="showmore">Show more</button>
+        </div>
+
+
+        <div class="col-sm-4 d-flex justify-content-center">
+            <a href="#" id="map"></a>
+        </div>
+    </div>
+</main>
+{% endblock %}

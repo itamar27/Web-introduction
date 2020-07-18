@@ -3,6 +3,7 @@ import datetime
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
+from django.forms import ModelForm
 
 from .models import Workout
 
@@ -15,7 +16,7 @@ class UserRegisterForm(UserCreationForm):
         model = User
         fields = ['username', 'password1', 'password2','first_name','last_name','email', 'is_staff']
 
-class WorkoutForm(forms.ModelForm):
+class WorkoutForm(ModelForm):
     class Meta:
         model = Workout
         fields = [
