@@ -30,7 +30,7 @@ def login_user(request):
     if request.method == 'POST':
         user = authenticate(request, username=request.POST['username'], password=request.POST['password'])
         if user is None:
-            return redirect('login')
+            return redirect('auth.login')
         else:
             login(request, user)
             return redirect('home.index')
@@ -42,7 +42,7 @@ def logout_user(request):
     return redirect('home.index')
 
 def workouts_index(request):
-    _workout = Workout.objects.all()
+    _workout = Workout.objects.all().order_by('-scale')
     return render(request, 'workouts/index.html', {'workouts': _workout})
 
 @login_required
@@ -81,12 +81,17 @@ def workouts_update(request, workout_id):
     return render(request, 'workouts/new.html', {'form': form, 'exercises': EXERCISES})
 
 @login_required
-def workouts_delete(request):
+def workouts_delete(request, workout_id):
+    workout = get_object_or_404(Workout, pk=workout_id)
+    if request.method == 'POST':
+        workout.delete()
+        return redirect('workouts.index')
+
     return render(request, 'home/index.html')
 
 def workouts_excercises(request):
     return JsonResponse(EXERCISES, safe=False)
 
 def home_index(request):
-    _workout = Workout.objects.all()[:4]
+    _workout = Workout.objects.all().order_by('-scale')[:4]
     return render(request, 'home/index.html', {'workouts': _workout})

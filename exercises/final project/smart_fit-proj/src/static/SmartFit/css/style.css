@@ -73,7 +73,9 @@ footer{
     margin-left:10px ;   
 }
 
-
+.navbar b{
+    color: #D45812; 
+}
 /*-------------------Icon----------------------------------*/
 #iconTrainer{
     background: url("../images/iconTrainer.png") no-repeat ;
@@ -89,10 +91,13 @@ footer{
     background: url("../images/iconTrainee.png") no-repeat ;
     display: block;
     height:60px;
-    width:60px;
+    color: black !important;
+    font-size: 15px;
+    padding-top:20px;
+    padding-left:65px;
 }
 
-/*---------------------------Trainee WorkoutDetail----------------------*/
+/*---------------------------Workout list index----------------------*/
 .row{
     flex-grow: 1;
 }
@@ -110,7 +115,12 @@ footer{
       padding-top: 15px;
   }
 
-
+ form input {
+        color: #D45812 !important;
+        font-size: 15px;
+        background-color: transparent;
+    }
+ 
 /*--------------------form---------------------------------*/
 
 form label{
@@ -145,10 +155,10 @@ form label{
 /*--------------------------Map--------------------------*/
 
 #map{
-    background: url("../images/map.png");
+    background: url("../images/map3.png") no-repeat;
     display: block;
-    width: 230px;
-    height: 280px;
+    width: 420px;
+    height: 450px;
     text-decoration: none;
 }
 
@@ -204,47 +214,6 @@ form label{
     padding: 8px 8px 0px 8px;
 }
 
-/*------------Star Rating-------*/
-.rate {
-    float: left;
-    height: 46px;
-    padding: 0 10px;
-}
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-}
-.rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:30px;
-    color:#ccc;
-}
-.rate:not(:checked) > label:before {
-    content: '★ ';
-}
-.rate > input:checked ~ label {
-    color: #ffc700;    
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-    color: #deb217;  
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-    color: #c59b08;
-}
-
-/* #starRating{
-    display: fixed;
-    bottom:0px;
-} */
 /*----------Login Form-------*/
 #login .container #login-row #login-column #login-box {
     margin-top: 120px;
@@ -299,27 +268,19 @@ form small a{margin-left: 5px;}
 /*--------- Media query-------*/
 @media (max-width:577px)
 {
-    #duplicator{
+    #duplicator1{
         margin-top:5px;
         margin-bottom:5px;
-    
-    }
-
-    #map{
-        margin-top: 20px;
     }
 
     .cardWO{
-        margin:10px;
-        width: 80%;
+        margin:10px auto;
+        width: 60% !important;
     }
 
-    .rate{
-        display: flex;
-        flex-direction: row-reverse;
-
+  #map{
+        display:none;
     }
-
     /*-----------login---------*/
     #login .container #login-row #login-column #login-box {
         height:350px;
@@ -329,5 +290,7 @@ form small a{margin-left: 5px;}
     *[role="form"] h2 { 
         font-size:30px;
     }
+
+  
 
 }

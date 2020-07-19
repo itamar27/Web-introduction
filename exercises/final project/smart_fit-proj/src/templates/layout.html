@@ -27,13 +27,18 @@
             </div>
 
             <nav class="navbar navbar-expand-sm navbar-expand-m  rounded">
-                <a class="navbar-brand col-md-3" href="#" id="iconTrainer">
-                    <b>Hello </b>{% if user.is_authenticated %}<span> {{ user.first_name }} {% endif %}</span>  
-                </a>
                 {% if user.is_authenticated %}
+                <a class="navbar-brand col-md-3" href="#" {% if user.is_staff %} id="iconTrainer" {%else%} id="iconTrainee"{% endif %} >
+                    <b>Hello {{ user.first_name }} </b>
+                </a>
                 <a href="/logout" class="col-md-9 text-right ">Logout</a>
+                {% else %}
+                <b class="navbar-brand col-md-3">Welcome to SmartFit </b>
+                <div class="col-md-9 text-right ">
+                    <a href="/login">Sign in&nbsp;|</a>
+                    <a href="/register">Join us!</a>
+                </div>
                 {% endif %}
-                <div class="collapse navbar-collapse" id="collapsibleNavbar"></div>
             </nav>
 
             {% block content %}{% endblock %}

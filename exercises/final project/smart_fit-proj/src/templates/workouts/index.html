@@ -6,11 +6,17 @@
  {%for t in workouts %}           
 <div class="container">
     <div class="card text-center workoutList allBox">
-        <a href="/workOutDetails/{{t.id}}" title="See full details">
+        <a href="{% url 'workouts.read' workout_id=t.id %}" title="See full details">
             <h4>{{t.name}}</h4>
         </a>
         <h6>{{t.desc}}</h6>
-        <p>Diffuclty level: {{t.scale}}</p>
+        <p >Diffuclty level: {{t.scale}}</p> 
+        {% if user.is_staff %}
+         <form method="POST"  action="{% url 'workouts.delete' t.id%}" >
+             {% csrf_token%}
+            <input type="submit" class="btn btn-link " value="Delete WorkOut"></input>
+         </form>
+        {% endif %}
     </div>
 </div>
 {%endfor%}
