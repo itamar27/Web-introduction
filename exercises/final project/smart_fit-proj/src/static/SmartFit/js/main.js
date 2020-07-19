@@ -65,3 +65,5 @@ if ($exList.find('option').length == 1) {
 }
 
 
+//--------------------------------Delete warning-------------------//
+
